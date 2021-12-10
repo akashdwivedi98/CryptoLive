@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import { Layout, Typography, Space } from 'antd';
+import { Layout, Typography } from 'antd';
 
 import { Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails, Navbar } from './components';
 import './App.css';
@@ -33,17 +33,14 @@ const App = () => (
         </div>
       </Layout>
       <div className="footer">
-        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
+        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>© 2021
           <Link to="/">
-            CryptoLive Inc.
-          </Link> <br />
-          All Rights Reserved.
+            CryptoLive.com
+          </Link> All Rights Reserved.
         </Typography.Title>
-        <Space>
-          <Link to="/">Home</Link>
-          <Link to="/exchanges">Exchanges</Link>
-          <Link to="/news">News</Link>
-        </Space>
+        <Typography.Title level={4} style={{ color: 'white', textAlign: 'center' }}>
+          Explore the World of Cryptocurrency.
+        </Typography.Title>
       </div>
     </div>
   </div>
